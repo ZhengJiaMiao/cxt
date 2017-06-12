@@ -1,10 +1,495 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>产销通</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/jmStyle.css" />
+		<script src="js/jquery.js"></script>
 	</head>
-	
-	<body>
+
+	<body class="bgF0">
+		<!-- wjwbar start -->
+		<div id="wjwbar" class="share_topbar ">
+			<div class="share_topbar_main">
+				<div class="mobile">
+					<a href="http://m.wjw.cn/" target="_blank">手机版</a>
+				</div>
+				<div class="account_sign_register">
+					<ul>
+						<span id="tpLogin">
+	                        <li class="account_signin"><a href="http://www.wjw.cn/reg/passport.xhtml" rel="nofollow" target="_blank">请登录</a></li>
+	                        <li class="account_signup"><a href="http://www.wjw.cn/Reg/reg.xhtml" rel="nofollow" target="_blank">免费注册</a></li>
+	                    </span>
+					</ul>
+				</div>
+				<div class="topnav">
+					<ul>
+						<li class="list_first" style="_width: 94px;">
+							<div class="topnav_title">
+								<a href="http://www.wjw.cn" target="_blank">全球五金网首页</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- wjwbar end -->
+
+		<!-- cxt-bnr start -->
+		<div class="cxt-bnr clearfix">
+			<div class="container cxt-bnr-info">
+				<h3>厂销通，打造五金实力厂家新格局</h3>
+				<p>让真实的厂家先富起来</p>
+			</div>
+		</div>
+		<!-- cxt-bnr end -->
+
+		<!-- cxt-slidebar start -->
+		<div class="cxt-slidebar">
+			<div class="slidebar-hd">
+				<img src="images/cxtLogoBig.png" />
+			</div>
+			<div class="slidebar-nav">
+				<ul>
+					<li class="cur" data-anchor="advantage">
+						<a href="javascript:void(0);">厂销通介绍和优势<i></i></a>
+					</li>
+					<li data-anchor="service">
+						<a href="javascript:void(0);">厂销通套餐包含的服务<i></i></a>
+					</li>
+					<li data-anchor="package">
+						<a href="javascript:void(0);">厂销通套餐购买<i></i></a>
+					</li>
+					<li data-anchor="case">
+						<a href="javascript:void(0);">厂销通客户案例<i></i></a>
+					</li>
+					<li data-anchor="order">
+						<a href="javascript:void(0);">订单匹配动态<i></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- cxt-slidebar end -->
+
+		<!-- cxt-info start -->
+		<div class="cxt-info">
+			<div class="container">
+				<div class="cxt-info-main">
+					<div class="m-block cxt-info-advantage" id="advantage">
+						<h5 class="m-title">厂销通介绍和优势</h5>
+						<div class="box">
+							<div class="txt">厂销通”是全球五金网整合网站及行业资源，专门服务于实体厂家。通过全网引流，品牌曝光，订单匹配等多种方式，在帮助厂家提高曝光率和转化率的同时直接建立采购商与厂家信息对接的快速通道，为厂家提供精准订单输送服务，让企业优势更好的凸显，让五金机电行业没有难卖的好货。</div>
+							<div class="adv-box">
+								<div class="adv-box-inner clearfix">
+									<div class="adv-item l">
+										<i class="i-ctx i-ctx01"></i>
+										<h5>省钱</h5>
+										<p>享套餐优惠</p>
+									</div>
+									<div class="adv-item l">
+										<i class="i-ctx i-ctx02"></i>
+										<h5>省心</h5>
+										<p>工厂实地认证/订单精准推送</p>
+									</div>
+									<div class="adv-item l">
+										<i class="i-ctx i-ctx03"></i>
+										<h5>省力</h5>
+										<p>畅销通=10个业务员</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-block" id="service">
+						<h5 class="m-title">畅销通套餐包含的服务</h5>
+						<div class="ser-box">
+							<div class="ser-box-inner clearfix">
+								<div class="ser-item l">
+									<i class="i-ser i-ser01"></i>
+									<h5>工厂认证</h5>
+									<p>厂家实体认证，拥有专属认证标识，提升采购商的信任</p>
+								</div>
+								<div class="ser-item l">
+									<i class="i-ser i-ser02"></i>
+									<h5>订单匹配</h5>
+									<p>真实采购订单，精准匹配推送轻松做生意</p>
+								</div>
+								<div class="ser-item l">
+									<i class="i-ser i-ser03"></i>
+									<h5>黄金展位</h5>
+									<p>搜索页面最黄金的广告位置，获取超高的曝光量</p>
+								</div>
+								<div class="ser-item l">
+									<i class="i-ser i-ser04"></i>
+									<h5>搜索置顶</h5>
+									<p>关键词搜索列表页始终第一位置展示，获取更多精准用户</p>
+								</div>
+								<div class="ser-item l">
+									<i class="i-ser i-ser05"></i>
+									<h5>无限上架</h5>
+									<p>无限制的发布普通产品信息，获得更好的SEO排名</p>
+								</div>
+								<div class="ser-item l">
+									<i class="i-ser i-ser06"></i>
+									<h5>特权上架</h5>
+									<p>专属认证工厂特权，上架产品权重极高，收入更好排名更靠前</p>
+								</div>
+								<div class="ser-item l">
+									<i class="i-ser i-ser07"></i>
+									<h5>强制转移</h5>
+									<p>设置关键词精准流量直导5000个页面</p>
+								</div>
+								<div class="ser-item l">
+									<i class="i-ser i-ser08"></i>
+									<h5>在线客服</h5>
+									<p>24小时在线客服通软件，让采购商随时随地联系</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-block" id="package">
+						<h5 class="m-title">畅销通套餐</h5>
+						<div class="package-box clearfix">
+							<div class="package-item l">
+								<h5 class="title">经典套餐</h5>
+								<div class="pri">
+									<p class="nowPri"><span class="sign">￥</span><span class="num">9999</span></p>
+									<p class="pri-tip">（购买套餐节省16800元）</p>
+								</div>
+								<div class="rules">
+									<p>工厂实体认证</p>
+									<p>无限上架普通产品</p>
+									<p>上架<span>10</span>条特权产品</p>
+									<p>搜索置顶主产品<span>10</span>个</p>
+									<p>询盘匹配<span>50</span>条</p>
+									<p>强制转移<span>5000</span>页面</p>
+									<p>24小时在线客服通软件</p>
+									<p>黄金展位10个</p>
+								</div>
+								<a href="" class="package-btn">立即咨询</a>
+							</div>
+							<div class="package-item l">
+								<h5 class="title">托管套餐</h5>
+								<div class="pri">
+									<p class="nowPri"><span class="sign">￥</span><span class="num">16888</span></p>
+									<p class="pri-tip">（购买套餐节省26800元）</p>
+								</div>
+								<div class="rules">
+									<p>工厂实体认证</p>
+									<p>无限上架普通产品</p>
+									<p>上架<span>10</span>条特权产品</p>
+									<p>搜索置顶主产品<span>10</span>个</p>
+									<p>询盘匹配<span>50</span>条</p>
+									<p>强制转移<span>5000</span>页面</p>
+									<p>24小时在线客服通软件</p>
+									<p>黄金展位10个</p>
+								</div>
+								<div class="dyy">
+									<p>代运营顶级托管</p>
+									<a href="">了解代运营 >></a>
+								</div>
+								<a href="" class="package-btn">立即咨询</a>
+							</div>
+						</div>
+					</div>
+					<div class="m-block" id="case">
+						<h5 class="m-title">客户案例</h5>
+						<div class="kehu-box">
+							<div class="kehu-item clearfix">
+								<div class="l kehu-info">
+									<h5><img src="images/cxtLogo.png" /><span>广东德普龙建材有限公司</span></h5>
+									<div class="kehu-info-detail">
+										<ul class="clearfix">
+											<li class="l">
+												<p>工厂面积</p>
+												<p class="kehu-info-p">2000平方</p>
+											</li>
+											<li class="l">
+												<p>员工</p>
+												<p class="kehu-info-p">120人</p>
+											</li>
+											<li class="l">
+												<p>生产设备</p>
+												<p class="kehu-info-p">20台</p>
+											</li>
+										</ul>
+									</div>
+									<div class="kehu-info-keyword">
+										<span>实地认证</span><span>原厂工厂</span><span>代加工</span>
+									</div>
+									<p class="kehu-range">主营：<span>铝型材</span><span>铝方通</span><span>铝扣板</span><span>幕墙铝单板</span><span>镀锌钢板</span><span>铝格栅</span><span>铝圆管</span><span>长形铝条扣</span></p>
+								</div>
+								<div class="l kehu-product">
+									<ul class="clearfix">
+										<li class="l">
+											<img src="images/product/pro01.png" />
+											<p>铝单板</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro02.png" />
+											<p>铝方通</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro03.png" />
+											<p>冲孔氟碳铝单板</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro04.png" />
+											<p>铝格栅天花</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro05.png" />
+											<p>铝拉网板</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro06.png" />
+											<p>墙体材料</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="kehu-item clearfix">
+								<div class="l kehu-info">
+									<h5><img src="images/cxtLogo.png" /><span>曲阜市圣鲁机械厂</span></h5>
+									<div class="kehu-info-detail">
+										<ul class="clearfix">
+											<li class="l">
+												<p>工厂面积</p>
+												<p class="kehu-info-p">4500平方</p>
+											</li>
+											<li class="l">
+												<p>员工</p>
+												<p class="kehu-info-p">200余人</p>
+											</li>
+											<li class="l">
+												<p>生产设备</p>
+												<p class="kehu-info-p">50台</p>
+											</li>
+										</ul>
+									</div>
+									<div class="kehu-info-keyword">
+										<span>实地认证</span><span>原厂工厂</span><span>代加工</span>
+									</div>
+									<p class="kehu-range">主营：<span>机械设备</span><span>挖坑机</span><span>播种机</span><span>旋耕机</span><span>田园管理机</span></p>
+								</div>
+								<div class="l kehu-product">
+									<ul class="clearfix">
+										<li class="l">
+											<img src="images/product/pro07.png" />
+											<p>挖坑机</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro08.png" />
+											<p>挖树机</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro09.png" />
+											<p>田园管理机</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro10.png" />
+											<p>菜籽播种机</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro11.png" />
+											<p>大马力旋耕机</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro12.png" />
+											<p>麦秸秆打捆机</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="kehu-item clearfix">
+								<div class="l kehu-info">
+									<h5><img src="images/cxtLogo.png" /><span>温州苍南县博创工艺厂</span></h5>
+									<div class="kehu-info-detail">
+										<ul class="clearfix">
+											<li class="l">
+												<p>工厂面积</p>
+												<p class="kehu-info-p">3000平方</p>
+											</li>
+											<li class="l">
+												<p>员工</p>
+												<p class="kehu-info-p">100余人</p>
+											</li>
+											<li class="l">
+												<p>生产设备</p>
+												<p class="kehu-info-p">50余台</p>
+											</li>
+										</ul>
+									</div>
+									<div class="kehu-info-keyword">
+										<span>实地认证</span><span>原厂工厂</span><span>代加工</span>
+									</div>
+									<p class="kehu-range">主营：<span>安全标志牌</span><span>安全警示牌</span><span>安全标识牌</span><span>电力标牌</span></p>
+								</div>
+								<div class="l kehu-product">
+									<ul class="clearfix">
+										<li class="l">
+											<img src="images/product/pro13.png" />
+											<p>安全标牌</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro14.png" />
+											<p>反光标牌</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro15.png" />
+											<p>电杆不锈钢扎带</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro16.png" />
+											<p>公用电话牌</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro17.png" />
+											<p>挂钩式警示牌</p>
+										</li>
+										<li class="l">
+											<img src="images/product/pro18.png" />
+											<p>俱乐部车牌</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-block pb47" id="order">
+						<h5 class="m-title">订单匹配动态</h5>
+						<div class="order-box">
+							<div class="order-hd clearfix">
+								<div class="order-name l">采购产品</div>
+								<div class="order-num l">数量</div>
+								<div class="order-business l">采购商</div>
+								<div class="order-factory l">匹配工厂</div>
+							</div>
+							<div class="order-main">
+								<div class="order-main-inner">
+									<div class="order-row clearfix">
+										<div class="order-name l">1单级双吸泵</div>
+										<div class="order-num l">100件</div>
+										<div class="order-business l">137******54</div>
+										<div class="order-factory l">曲阜市圣鲁机械厂</div>
+									</div>
+									<div class="order-row clearfix">
+										<div class="order-name l">2单级双吸泵</div>
+										<div class="order-num l">100件</div>
+										<div class="order-business l">137******54</div>
+										<div class="order-factory l">曲阜市圣鲁机械厂</div>
+									</div>
+									<div class="order-row clearfix">
+										<div class="order-name l">3单级双吸泵</div>
+										<div class="order-num l">100件</div>
+										<div class="order-business l">137******54</div>
+										<div class="order-factory l">曲阜市圣鲁机械厂</div>
+									</div>
+									<div class="order-row clearfix">
+										<div class="order-name l">4单级双吸泵</div>
+										<div class="order-num l">100件</div>
+										<div class="order-business l">137******54</div>
+										<div class="order-factory l">曲阜市圣鲁机械厂</div>
+									</div>
+									<div class="order-row clearfix">
+										<div class="order-name l">5单级双吸泵</div>
+										<div class="order-num l">100件</div>
+										<div class="order-business l">137******54</div>
+										<div class="order-factory l">曲阜市圣鲁机械厂</div>
+									</div>
+									<div class="order-row clearfix">
+										<div class="order-name l">6单级双吸泵</div>
+										<div class="order-num l">100件</div>
+										<div class="order-business l">137******54</div>
+										<div class="order-factory l">曲阜市圣鲁机械厂</div>
+									</div>
+									<div class="order-row clearfix">
+										<div class="order-name l">7单级双吸泵</div>
+										<div class="order-num l">100件</div>
+										<div class="order-business l">137******54</div>
+										<div class="order-factory l">曲阜市圣鲁机械厂</div>
+									</div>
+									<div class="order-row clearfix">
+										<div class="order-name l">8单级双吸泵</div>
+										<div class="order-num l">100件</div>
+										<div class="order-business l">137******54</div>
+										<div class="order-factory l">曲阜市圣鲁机械厂</div>
+									</div>
+									<div class="order-row clearfix">
+										<div class="order-name l">9单级双吸泵</div>
+										<div class="order-num l">100件</div>
+										<div class="order-business l">137******54</div>
+										<div class="order-factory l">曲阜市圣鲁机械厂</div>
+									</div>
+									<div class="order-row clearfix">
+										<div class="order-name l">10单级双吸泵</div>
+										<div class="order-num l">100件</div>
+										<div class="order-business l">137******54</div>
+										<div class="order-factory l">曲阜市圣鲁机械厂</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cxt-info end -->
+
+		<!-- wjt-ft start -->
+		<div class="wjt-ft">
+			<div class="container clearfix">
+				<p class="l">
+					全球五金网(1999-2016) 版权所有</p>
+				<p class="r T-ft-nav">
+					<a href="http://www.wjw.cn/about/" target="_blank">关于我们</a><span>|</span>
+					<a href="http://www.wjw.cn/anli/" target="_blank">成功案例</a><span>|</span>
+					<a href="http://www.wjw.cn/about/links.xhtml" target="_blank">友情链接</a><span>|</span>
+					<a href="http://www.wjw.cn/about/lianxi.xhtml" target="_blank">联系我们</a>
+				</p>
+
+			</div>
+		</div>
+		<!-- wjt-ft end -->
+		<script>
+			$(function() {
+				$(".slidebar-nav li").click(function() {
+					//alert($(this).data("anchor"))
+					$(this).addClass("cur").siblings().removeClass("cur");
+					var id = $(this).data("anchor");
+					$("body, html").animate({
+						"scrollTop": $("#" + id).offset().top
+					})
+				});
+				
+				
+			});
+			$(window).scroll(function() {
+				$(".m-block").each(function() {
+					var index = $(this).index();
+					if($(window).scrollTop() > $(this).offset().top && $(window).scrollTop() < $(this).offset().top + $(this).height()) {
+						$(".slidebar-nav li").eq(index).addClass("cur").siblings().removeClass("cur");
+					}
+				});
+			});
+			
+				function AutoScroll(obj) {
+				    $(obj).find(".order-main-inner:first").animate({
+				        marginTop: "-22px"
+				    },
+				    500,
+				    function() {
+				        $(this).css({
+				            marginTop: "0px"
+				        }).find(".order-main-inner:first").appendTo(this);
+				    });
+				}
+				$(document).ready(function() {
+				    setInterval('AutoScroll(".order-main")', 1000)
+				});
+		</script>
 	</body>
+
 </html>
