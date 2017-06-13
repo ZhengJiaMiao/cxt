@@ -1,0 +1,20 @@
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.bgF0 {
+	background: #f0f0f0;
+}
+/* ------------------------------------- wjwbar start ------------------------------------- */
+.share_topbar{ background-color:#fff; height:30px;background: #333333; width:100%; line-height:30px; font:Tahoma,Arial,'\5B8B\4F53',sans-serif; color:#555; font-size:12px; clear:both;}
+.share_topbar a, .share_topbar a:link, .share_topbar a:visited{text-decoration: none; color: #808080;}
+.share_topbar a:hover { color:#fff;}
+
+.share_topbar_main{ width:1200px; margin:auto;}
+.mobile{ float:left; height:16px; line-height:16px; padding:0 12px 0 16px; margin:7px 0; background:url(http://www.wjw.cn/Content/images/share01.png) no-repeat; background-position:0 -7px; border-right:1px #474747 solid;}
+.account_sign_register{ float:left; }
+.account_sign_register ul li{ float:left;}
+.account_signin{ float:left; padding:0 0 0 14px;}
+.account_signup{ float:left; padding:0 0 0 14px;}
+#wjwbar .topnav{ float:right; _width: 530px;}
+/* ------------------------------------- wjwbar end ------------------------------------- */

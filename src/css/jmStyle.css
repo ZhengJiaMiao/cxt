@@ -29,6 +29,7 @@
 .cxt-bnr-info p {
 	color: #fff;
 	text-align: center;
+	padding-left: 210px;
 }
 .cxt-bnr-info h3 {
 	font-size: 40px;
@@ -55,6 +56,7 @@
 }
 .slidebar-nav {
 	background: #fff;
+	width: 200px;
 }
 .slidebar-nav ul {
 	border: 1px solid #dedede;
@@ -63,6 +65,7 @@
 }
 .slidebar-nav ul li {
 	margin-top: 20px;
+	white-space: nowrap;
 }
 .slidebar-nav li a {
 	font-size: 14px;
@@ -475,6 +478,9 @@
 	margin: 0 32px;
 	cursor: pointer;
 }
+.cxt-bnr-item a {
+	display: block;
+}
 .i-project {
 	display: inline-block;
 	width: 50px;
@@ -792,6 +798,7 @@
 }
 .cxt-ad {
 	display: block;
+	margin-top: 50px;
 }
 .pro-item {
 	box-shadow: 0 1px 1px #ccc;
@@ -810,7 +817,7 @@
 	color: #31c74a;
 }
 .yellow03 .pro-item-problem h5 {
-	color: #ffc33d;
+	color: #ff9900;
 }
 .blue04 .pro-item-problem h5 {
 	color: #538cff;
